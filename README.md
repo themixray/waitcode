@@ -12,7 +12,7 @@ while True:
   print('+100')
 ```
 ***
-Like the cheat codes
+With table
 ```python
 from waitcode import waitcode
 while True:
