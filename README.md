@@ -6,8 +6,19 @@ Wait for a queue of keys to be pressed (like the cheat codes)
 Like the cheat codes
 ```python
 from waitcode import waitcode
-from rich.console import Console
-from rich.table import Table
+while True:
+  try:
+    from rich.console import Console
+    from rich.table import Table
+    break
+  except:
+    import pip
+    def install(package):
+        if hasattr(pip, 'main'):
+            pip.main(['install', package])
+        else:
+            pip._internal.main(['install', package])
+    install('rich')
 console = Console()
 def stats():
   table = Table()
