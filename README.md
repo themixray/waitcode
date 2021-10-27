@@ -3,6 +3,15 @@ Wait for a queue of keys to be pressed (like the cheat codes)
 
 [Documentation](https://github.com/themixray/waitcode/wiki)
 # Quick Start
+```python
+from waitcode import waitcode
+
+waiting = waitcode('hesoyam')
+while True:
+  waiting.wait()
+  print('+100')
+```
+***
 Like the cheat codes
 ```python
 from waitcode import waitcode
